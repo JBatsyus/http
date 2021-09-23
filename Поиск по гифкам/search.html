@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <script src="./search.js" defer></script>
+    <style>
+        html {
+            height: 100%;
+            background: url(./img/4391857.jpg);
+            background-size: 100%;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            width: 250px;
+            height: 250px;
+        }
+
+        input {
+            height: 30px;
+            width: 300px;
+            font-size: 25px;
+        }
+
+        button {
+            height: 35px;
+            width: 100px;
+            margin: 10px;
+            font-size: 20px;
+            /* background-color: #85014328; */
+
+        }
+
+        a {
+            color: #850144;
+            font-weight: bolder;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>GIF:</h1>
+        <input type="text" id="search" placeholder="Что ищем?">
+        <button id="button" onclick="search();">Поиск!</button>
+    </div>
+    <div class="container" id="container">
+    </div>
+
+</body>
+
+</html>
