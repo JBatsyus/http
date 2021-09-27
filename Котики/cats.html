@@ -76,9 +76,9 @@
 <body>
 
     <h1>Опросник для обладателей котиков =^-^= </h1>
-    <form name="input" id="form">
+    <form  id="form">
         <div><label for="nickename">Введите кличку питомца:</label>
-            <input type="text" title="Может состоять из букв и цифр" class="style" placeholder="Пушок II" required>
+            <input type="text" name="name_zoo" title="Может состоять из букв и цифр" class="style" placeholder="Пушок II" required>
         </div>
 
         <div><br>Укажите пол питомца:<br>
@@ -89,34 +89,34 @@
         </div>
 
         <div><br />Выберите породу питомца:
-            <select required>
-                <option value="option1">Дворовой</option>
-                <option value="option2" selected>Домашний</option>
-                <option value="option3">Сиамский</option>
+            <select required >
+                <option name="breed"  >Дворовой</option>
+                <option name="breed"  selected>Домашний</option>
+                <option name="breed" >Сиамский</option>
                 <option value="option4">Бенгальский</option>
                 <option value="option5">Британская</option>
-                <option value="option6">Корниш рекс</option>
+                <option value="option6" >Корниш рекс</option>
                 <option value="option7">Персидский</option>
-                <option value="option8">Мейн-кун</option>
-                <option value="option9">Сфинкс</option>
-                <option value="option10">Сибиррский</option>
+                <option value="option8" >Мейн-кун</option>
+                <option value="option9" >Сфинкс</option>
+                <option value="option10" >Сибиррский</option>
             </select>
         </div>
 
         <div><br>Выберите, чем питается Ваш питомец:<br>
             <input type="checkbox" id="food1"><label for="food1">Натуральный корм</label><br>
-            <input type="checkbox" id="food2"><label for="food2">Сухой корм</label><br>
-            <input type="checkbox" id="food3"><label for="food3">Влажный корм</label>
+            <input  type="checkbox" id="food2"><label  for="food2">Сухой корм</label><br>
+            <input type="checkbox" id="food3"><label  for="food3">Влажный корм</label>
         </div>
         <br>
         <fieldset>
             <legend>ФИО владельца:</legend>
 
-            <input type="text" title="Только буквы русского алфавита" pattern="^[А-Яа-я]+$" class="style"
+            <input type="text" title="Только буквы русского алфавита" name="surname" pattern="^[А-Яа-я]+$" class="style"
                 placeholder="Фамилия" required>
-            <input type="text" title="Только буквы русского алфавита" pattern="^[А-Яа-я]+$" class="style"
+            <input type="text" title="Только буквы русского алфавита" name="name" pattern="^[А-Яа-я]+$" class="style"
                 placeholder="Имя" required>
-            <input type="text" title="Только буквы русского алфавита" pattern="^[А-Яа-я]+$" class="style"
+            <input type="text" title="Только буквы русского алфавита" name="patronymic" pattern="^[А-Яа-я]+$" class="style"
                 placeholder="Отчество" required></div>
         </fieldset>
         <br>
@@ -126,11 +126,11 @@
             <input type="tel" id="tel" minlength="11" name="tel" class="style">
             <label for="address"><br>Введите адрес проживания владельца:</label><br>
             <br>
-            <textarea rows="5" cols="50" pattern="^[?!,.а-яА-ЯёЁ0-9\s]+$"
+            <textarea rows="5" cols="50" pattern="^[?!,.а-яА-ЯёЁ0-9\s]+$" name="adress"
                 placeholder="Страна, населенный пункт, улица, дом, кватрира" required></textarea>
         </fieldset>
 
-        <div><label><br />Приложить фото питомца:</label>
+        <div><label name="foto" ><br />Приложить фото питомца:</label>
             <input type="file" />
         </div>
 
