@@ -89,24 +89,24 @@
         </div>
 
         <div><br />Выберите породу питомца:
-            <select required >
-                <option name="breed"  >Дворовой</option>
-                <option name="breed"  selected>Домашний</option>
-                <option name="breed" >Сиамский</option>
-                <option value="option4">Бенгальский</option>
-                <option value="option5">Британская</option>
-                <option value="option6" >Корниш рекс</option>
-                <option value="option7">Персидский</option>
-                <option value="option8" >Мейн-кун</option>
-                <option value="option9" >Сфинкс</option>
-                <option value="option10" >Сибиррский</option>
+            <select name="chooseBreed" id="breed" required >
+                <option value="Дворовой">Дворовой</option>
+                <option value="Домашний" selected>Домашний</option>
+                <option value="Сиамский" >Сиамский</option>
+                <option value="Бенгальский">Бенгальский</option>
+                <option value="Британская">Британская</option>
+                <option value="Корниш рекс" >Корниш рекс</option>
+                <option value="Персидский">Персидский</option>
+                <option value="Мейн-кун" >Мейн-кун</option>
+                <option value="Сфинкс" >Сфинкс</option>
+                <option value="Сибирский" >Сибирский</option>
             </select>
         </div>
 
         <div><br>Выберите, чем питается Ваш питомец:<br>
-            <input type="checkbox" id="food1"><label for="food1">Натуральный корм</label><br>
-            <input  type="checkbox" id="food2"><label  for="food2">Сухой корм</label><br>
-            <input type="checkbox" id="food3"><label  for="food3">Влажный корм</label>
+            <input type="checkbox" name="meal" value="Натуральный корм" id="food1"><label for="nature">Натуральный корм</label><br>
+            <input  type="checkbox" name="meal" value="Сухой корм" id="food2"><label  for="dry">Сухой корм</label><br>
+            <input type="checkbox" name="meal" value="Влажный корм" id="food3"><label  for="wet">Влажный корм</label>
         </div>
         <br>
         <fieldset>
